@@ -108,7 +108,6 @@ int initCamera() {
  * 3 on Server error
  */
 int takeAndUploadPicture() {
-
   if (WiFi.status() != WL_CONNECTED) {
     return 1; // Wifi Failure
   }
