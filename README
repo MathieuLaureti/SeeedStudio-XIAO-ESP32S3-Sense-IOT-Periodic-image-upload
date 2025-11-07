@@ -1,6 +1,6 @@
 # Made for SeeedStudio XIAO ESP32S3 Sense
 
-### Before flashing these variables must be defined in "src/main.cpp":
+### Before flashing, these variables must be defined in "src/main.cpp":
 
 - WIFI_SSID
 - WIFI_PASS
