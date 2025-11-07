@@ -8,7 +8,7 @@
 - server_port
 - match server_url to your api route
 
-##### Time between pictures can be edited with the variable : TIME_TO_SLEEP_SEC
+##### Time between pictures can be edited with the variable : TIME_TO_SLEEP_SEC (default 1800 seconds = 30 minutes)
 
 
 
