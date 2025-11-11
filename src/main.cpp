@@ -1,22 +1,23 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include "esp_camera.h"
+#include "secrets.h"
 
 //your network credentials
-#define WIFI_SSID ""
-#define WIFI_PASS ""
+#define WIFI_SSID ssid
+#define WIFI_PASS password
 
 // Deep sleep timer
-#define TIME_TO_SLEEP_SEC 1800 
+#define TIME_TO_SLEEP_SEC sleep_time_sec
 #define TIME_TO_SLEEP_US (TIME_TO_SLEEP_SEC * 1000000ULL)
 
 #define LED_PIN 21
 
 // your server IP and port
-const char* server_ip = ""; 
-const int server_port = 0;
+#define SERVER_IP server_local_ip 
+#define SERVER_PORT server_port
 
-String upload_url = "http://" + String(server_ip) + ":" + String(server_port) + "/upload";
+String upload_url = "http://" + String(SERVER_IP) + ":" + String(SERVER_PORT) + upload_endpoint;
 
 /**
  * @brief Blink the led x times to signal a fatal error.
