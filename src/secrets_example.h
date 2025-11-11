@@ -10,5 +10,5 @@ const char *server_local_ip = "127.0.0.1";
 const int server_port = 8000;
 const char *upload_endpoint = "/upload";
 
-//Sleep time in seconds (Time between picture uploads)
+//Sleep time in seconds (Time between picture uploads) 1800 seconds = 30 minutes
 const char sleep_time_sec = 1800;
